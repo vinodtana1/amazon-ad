@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>carewellington</title>
+    <link rel="stylesheet" href="./css/newTab.css">
+    <!-- <script src="./js/newTab.js"></script> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ?
+                    MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+
+        // Enabling the debug mode flag is useful during implementation,
+        // but it's recommended you remove it for production
+        mixpanel.init('28a25758967497d84a1dfd9fd3abc6be', { debug: true });
+        mixpanel.track('Page_on_loaded');
+    </script>
+
+    <!-- amazon code  -->
+    <link rel="preconnect" href="https://c.aps.amazon-adsystem.com" crossorigin>
+    <script async src="https://c.aps.amazon-adsystem.com/apstag.js" fetchpriority="high"></script>
+    <script>
+        window.apstag = window.apstag || {
+            queue: [],
+            init: function () {
+                apstag.queue.push(['i', arguments, (new Date).getTime()])
+            },
+            fetchBids: function () {
+                apstag.queue.push(['f', arguments, (new Date).getTime()])
+            },
+            setDisplayBids: function () { }, targetingKeys: function () {
+                return [];
+            }
+        }
+    </script>
+
+    <script>
+        console.log("apstagapstag", apstag);
+        console.log("apstagapstag", window.apstag);
+        apstag.init({
+            pubID: 'xxxx', adServer: 'googletag', deals: true, signals: {
+                ortb2: {
+                    site: {
+                        // cat: ["441"],
+                        // pagecat: ["441"],
+                        // sectioncat: ["112"],
+                        // cattax: 7,
+                        page: "https://example.com",
+                        keywords: "clothing, real estate, shopping",
+                        ext: {
+                            sitetaxonomy: "betting"
+                        },
+                        publisher: {
+
+                            id: "2eb59980-3e1b-4156-8e52-10d723c1f37a"
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        apstag.queue.push(function () {
+            apstag.customPlacements().hint("93b7dd52-a8ce-11ed-afa1-0242ac120002:1", "default");
+            apstag.customPlacements().hint("93b7dd52-a8ce-11ed-afa1-0242ac120002:2");
+        }); apstag.queue.push(function () {
+            apstag.customPlacements().enable();
+        });
+    </script>
+
+    <script>
+        apstag.queue.push(function () {
+            apstag.customPlacements().hint("93b7dd52-a8ce-11ed-afa1-0242ac120002:1",
+                "default"); apstag.customPlacements().hint("93b7dd52-a8ce-11ed-afa1-0242ac120002:2");
+        });
+        apstag.queue.push(function () {
+            apstag.customPlacements().addEventListener("PlacementResponse", (e) => {
+                console.log("eee vinod", e)
+                if (e.detail.aps?.length > 0 && e.detail.aps[0].active === true) {
+                    return;
+                } else {
+                    // fallback
+                }
+            })
+        });
+        apstag.queue.push(function () {
+            apstag.customPlacements().enable();
+        });
+        console.log("apstagapstag", apstag);
+        console.log("apstagapstag", window.apstag);
+
+    </script>
+
+    <script src="https://static.dealsrch.com/watcher.js">   </script>
+</head>
+
+<body>
+    <div class="sec-top-full">
+        <img src="./img/Background.png" alt="carewellington" class="background">
+        <div class="main-container">
+            <div class="exten-content-full">
+                <div class="exten-content-top">
+                    <div class="exten-content-top-left">
+                    </div>
+
+                    <div class="exten-content-top-right">
+
+
+
+                    </div>
+                </div>
+                <div class="exten-content-top-right-border">
+                </div>
+                <div class="exten-contentfull-content">
+                    <div class="exten-con-left">
+
+                        <img src="./img/placeyourpicks.png" />
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- example default hint -->
+    <div id="93b7dd52-a8ce-11ed-afa1-0242ac120002:1"> </div>
+
+
+    <div class="sec-bottom-full">
+        <div class="sec-bottom-full-cont">
+            <h3>Placeyourpicks.com</h3>
+            <p>We use cookies and third-party cookies. You can modify the settings and obtain further information in our
+                Privacy Policy. You accept its use by continuing the navigation.</p>
+            <p>Placeyourpicks.com is committed to providing a website that is accessible, regardless of technology or
+                ability. If you experience any difficulty in accessing any part of this website, please feel free to
+                email
+                us at <a>accessibility@Placeyourpicks.com</a></p>
+            <div>
+                <img src="" />
+                <img src="" />
+            </div>
+        </div>
+
+    </div>
+    <!-- example secondary hint -->
+    <div id="93b7dd52-a8ce-11ed-afa1-0242ac120002:2"> </div>
+    <div class="footer-bottom-full">
+        <div class="always-left-text">
+            <span>Placeyourpicks.com</span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="always-bet-text">
+            <span>Always Bet Responsibly</span>
+        </div>
+        <div class="always-someone-text">
+            <span>IF YOU OR SOMEONE YOU KNOW HAS A GAMBLING PROBLEM, CALL 1-800-GAMBLER FOR
+                CRISIS COUNSELING AND
+                REFERRAL SERVICES. SELECT YOUR STATE OF RESIDENCE TO VIEW ADDITIONAL STATE-SPECIFIC TERMS AND
+                RESOURCES.</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
