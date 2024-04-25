@@ -45,8 +45,7 @@
     </script>
 
     <script>
-        console.log("apstagapstag", apstag);
-        console.log("apstagapstag", window.apstag);
+       
         apstag.init({
             pubID: '2eb59980-3e1b-4156-8e52-10d723c1f37a', adServer: 'googletag', deals: true, signals: {
                 ortb2: {
@@ -85,7 +84,7 @@
         });
         apstag.queue.push(function () {
             apstag.customPlacements().addEventListener("PlacementResponse", (e) => {
-                console.log("eee vinod", e)
+               
                 if (e.detail.aps?.length > 0 && e.detail.aps[0].active === true) {
                     return;
                 } else {
@@ -96,8 +95,6 @@
         apstag.queue.push(function () {
             apstag.customPlacements().enable();
         });
-        console.log("apstagapstag", apstag);
-        console.log("apstagapstag", window.apstag);
 
     </script>
 
